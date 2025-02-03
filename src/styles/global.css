@@ -80,3 +80,36 @@ h1 {
     display: none;
   }
 }
+
+/* Nuevos estilos para modernizar el blog */
+html {
+  background: linear-gradient(135deg, #2e2e2e, #121212);
+}
+
+h1, h2, h3 {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+a {
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.container {
+  padding: 2rem;
+  max-width: 90ch;
+  margin: auto;
+}
+
+.card {
+  background: #1e1e1e;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 1rem 0;
+}
+
+.card:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}

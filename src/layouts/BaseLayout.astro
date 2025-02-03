@@ -9,16 +9,15 @@ const { pageTitle } = Astro.props;
 <html lang="es">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{pageTitle}</title>
   </head>
-
-  <body>
+  <body style="min-height: 100vh; display: flex; flex-direction: column;">
     <Header />
-    <h1>{pageTitle}</h1>
-    <slot />
+    <main style="flex: 1;">
+      <h1>{pageTitle}</h1>
+      <slot />
+    </main>
     <Footer />
     <script>
       import '../scripts/menu.js';
