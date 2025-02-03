@@ -1,12 +1,21 @@
 ---
-const github = 'https://github.com/efe13dev';
-const website = 'https://efe-13.es';
-const linkedIn = 'https://www.linkedin.com/in/efe-13/';
+import Social from './Social.astro';
 ---
 
 <footer>
   <p>¡Más información sobre mis proyectos en</p>
-  <a href={github} target="_blank" rel="noopener noreferrer">Github</a>
-  <a href={website} target="_blank" rel="noopener noreferrer">Mi sitio Web</a>
-  <a href={linkedIn} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+  <Social platformLink="https://github.com/efe13dev" platformName="Github" />
+  <Social
+    platformLink="https://www.linkedin.com/in/efe13-dev/"
+    platformName="LinkedIn"
+  />
+  <Social platformLink="https://efe-13.es" platformName="Website" />
 </footer>
+
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>

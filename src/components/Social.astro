@@ -1,0 +1,33 @@
+---
+const { platformLink, platformName } = Astro.props;
+---
+
+<a href={platformLink} target="_blank" rel="noopener noreferrer"
+  >{platformName}</a
+>
+
+<style>
+  a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: #f2f2f2;
+    background: linear-gradient(45deg, #8b5cf6, #ec4899);
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  a:active {
+    transform: scale(0.98);
+  }
+</style>
