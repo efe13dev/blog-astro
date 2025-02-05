@@ -1,5 +1,6 @@
 ---
-title: "Dominando componentes: Mi evolución con Astro"
+layout: ../../layouts/MarkdownPostLayout.astro
+title: 'Dominando componentes: Mi evolución con Astro'
 author: Efe Studio
 description: 'Cómo los componentes reactivos transformaron mi flujo de trabajo'
 image:
@@ -11,8 +12,10 @@ tags: ['componentes', 'optimización', 'buenas prácticas', 'tutorial']
 
 # Componentes Astro: De simple a complejo
 
-## 🧩 Implementación práctica
+## Implementación práctica
+
 Creé un sistema de tarjetas interactivas con:
+
 - Lazy loading de imágenes
 - Animaciones CSS personalizadas
 - Soporte para syntax highlighting
@@ -20,8 +23,8 @@ Creé un sistema de tarjetas interactivas con:
 **Benchmark de rendimiento:**
 | Característica | Tiempo (ms) |
 |----------------|-------------|
-| Sin componentes | 3200        |
-| Con componentes| 850         |
+| Sin componentes | 3200 |
+| Con componentes| 850 |
 
 ```astro
 // Componente reutilizable Card.astro
@@ -45,6 +48,7 @@ const { href } = Astro.props;
 ```
 
 ## 🚀 Beneficios clave
+
 1. Coherencia visual en todas las secciones
 2. Actualizaciones centralizadas
 3. Mejor mantenibilidad del código

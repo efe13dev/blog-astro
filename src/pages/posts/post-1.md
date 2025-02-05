@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Mi primer mes con Astro: De principiante a creador'
 pubDate: 2024-02-01
 description: 'Mi experiencia construyendo un blog profesional con Astro desde cero'
@@ -11,14 +12,12 @@ tags: ['astro', 'desarrollo web', 'tutorial práctico', 'JAMstack']
 
 # De instalación a implementación: Mi viaje con Astro
 
-**Publicado el: 2024-02-01**  
-*Actualizado: 2024-02-15*
-
 ![Captura de mi primer layout](https://i.imgur.com/7G4QMJE.png)
 
 Como desarrollador frontend principiante, elegir Astro fue mi mejor decisión. Aquí mi recorrido:
 
 ## 🔧 Retos iniciales
+
 1. Configuración de MDX para posts interactivos
 2. Optimización de imágenes con el paquete oficial
 3. Implementación de dark mode con variables CSS
@@ -32,6 +31,7 @@ Como desarrollador frontend principiante, elegir Astro fue mi mejor decisión. A
 ```
 
 ## 💡 Lecciones clave
+
 - **Performance first**: Carga inicial reducida de 3s a 600ms
 - **Islas interactivas**: Solo cargar JS cuando es necesario
 - **SEO automático**: Generación de meta tags con TypeScript

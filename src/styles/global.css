@@ -7,7 +7,7 @@ html {
 body {
   margin: 0 auto;
   width: 100%;
-  max-width: 80ch;
+  max-width: 100ch;
   padding: 1rem;
   line-height: 1.5;
 }
@@ -37,20 +37,22 @@ h1 {
 .nav-links {
   width: 100%;
   top: 5rem;
-  left: 48px;
   background-color: #ff9776;
   display: none;
-  margin: 0;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .nav-links a {
   display: block;
+  margin: 1rem auto;
   text-align: center;
   padding: 10px 0;
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
+  border-radius: 0.5rem;
 }
 
 .nav-links a:hover,
@@ -64,7 +66,7 @@ h1 {
 
 @media screen and (min-width: 636px) {
   .nav-links {
-    margin-left: 5em;
+    margin: 0 auto;
     display: block;
     position: static;
     width: auto;
@@ -86,12 +88,16 @@ html {
   background: linear-gradient(135deg, #2e2e2e, #121212);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 a {
-  transition: color 0.3s ease, background-color 0.3s ease;
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
 }
 
 .container {
@@ -105,7 +111,9 @@ a {
   border-radius: 0.5rem;
   padding: 1.5rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   margin: 1rem 0;
 }
 
