@@ -1,17 +1,19 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro';
 const { frontmatter } = Astro.props;
 ---
 
-<h1>{frontmatter.title}</h1>
-<p class="published">
-  Publicado el: {frontmatter.pubDate.toString().slice(0, 10)}
-</p>
-<p>Escrito por {frontmatter.author}</p>
-<slot />
+<BaseLayout pageTitle={frontmatter.title}>
+  <p class="published">
+    Publicado el: {frontmatter.pubDate.toString().slice(0, 10)}
+  </p>
+  <p>Escrito por {frontmatter.author}</p>
+  <slot />
+</BaseLayout>
 
 <style>
   .published {
-    color: #333;
+    color: #888;
     font-weight: bold;
   }
 </style>
