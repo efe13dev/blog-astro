@@ -1,11 +1,12 @@
 ---
 import '../styles/global.css';
+import type { Post } from '../interfaces/Post';
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 // Usamos { eager: true } para que se carguen de inmediato los módulos.
 const allPosts = Object.values(
   import.meta.glob('./posts/*.md', { eager: true })
-);
+) as Post[];
 const pageTitle = 'Blog';
 ---
 
@@ -13,7 +14,7 @@ const pageTitle = 'Blog';
   <p>Aquí es donde publicaré mis diferentes artículos.</p>
   <ul>
     {
-      allPosts.map((post) => (
+      allPosts.map((post: Post) => (
         <li>
           <a href={post.url}>{post.frontmatter.title}</a>
         </li>
