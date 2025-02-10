@@ -7,7 +7,7 @@ author: 'Efe Studio'
 image:
   url: 'https://images.unsplash.com/photo-1515879218367-8466d910c554'
   alt: 'Editor de código con tema oscuro mostrando componentes Astro'
-tags: ['astro', 'desarrollo web', 'tutorial práctico', 'JAMstack']
+tags: ['astro', 'desarrollo web']
 ---
 
 # De instalación a implementación: Mi viaje con Astro

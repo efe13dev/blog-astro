@@ -7,7 +7,7 @@ image:
   url: 'https://images.unsplash.com/photo-1547658719-da2b51169166'
   alt: 'Diagrama de arquitectura de componentes Astro'
 pubDate: 2024-02-08
-tags: ['componentes', 'optimización', 'buenas prácticas', 'tutorial']
+tags: ['componentes', 'optimización']
 ---
 
 # Componentes Astro: De simple a complejo

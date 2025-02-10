@@ -1,18 +1,23 @@
 ---
+import type { Post } from '../../interfaces/Post';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
 export async function getStaticPaths() {
+  const allPosts = (await Astro.glob('../../content/posts/*.md')) as Post[];
   return [
     { params: { tag: 'astro' } },
-    { params: { tag: 'éxitos' } },
+    { params: { tag: 'exitos' } },
     { params: { tag: 'comunidad' } },
     { params: { tag: 'bloguear' } },
     { params: { tag: 'contratiempos' } },
-    { params: { tag: 'aprender en público' } },
   ];
 }
 
 const { tag } = Astro.params;
+const { posts } = Astro.props;
+const filteredPosts = posts.filter((post: Post) =>
+  post.frontmatter.tags?.includes(tag)
+);
 ---
 
 <BaseLayout pageTitle={tag}>
