@@ -7,7 +7,7 @@ image:
   url: 'https://images.unsplash.com/photo-1577563908411-5077b7dc7364'
   alt: 'Captura de conversación en Discord de Astro'
 pubDate: 2024-02-15
-tags: ['comunidad', 'colaboración', 'aprendizaje', 'caso de estudio']
+tags: ['comunidad', 'colaboración', 'aprendizaje', 'estudio']
 ---
 
 # Cuando el código no basta: Lecciones humanas

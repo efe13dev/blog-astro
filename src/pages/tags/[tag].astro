@@ -4,16 +4,19 @@ import type { Post } from '../../interfaces/Post';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
 export async function getStaticPaths() {
-  const allPosts = (await Astro.glob('../posts/*.md')) as Post[];
+  const posts = await Promise.all(
+    Object.entries(import.meta.glob('../posts/*.md'))
+      .map(async ([_, post]) => await post())
+  ) as Post[];
 
   // Obtener todos los tags únicos de todos los posts
   const uniqueTags = [
-    ...new Set(allPosts.flatMap((post) => post.frontmatter.tags)),
+    ...new Set(posts.flatMap((post) => post.frontmatter.tags)),
   ];
 
   // Crear una ruta para cada tag
   return uniqueTags.map((tag) => {
-    const filteredPosts = allPosts.filter((post) =>
+    const filteredPosts = posts.filter((post) =>
       (post.frontmatter.tags ?? []).includes(tag ?? '')
     );
     return {
@@ -24,8 +27,10 @@ export async function getStaticPaths() {
 }
 
 const { tag = 'sin-etiqueta' } = Astro.params;
-const pageTitle = `Entradas etiquetadas con ${tag}`;
 const { posts } = Astro.props;
+
+const pageTitle = `Entradas etiquetadas con ${tag}`;
+
 const filteredPosts = posts.filter((post) =>
   post.frontmatter.tags?.includes(tag)
 );
