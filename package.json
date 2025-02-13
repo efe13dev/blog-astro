@@ -2,6 +2,7 @@
   "name": "blog",
   "version": "0.0.1",
   "dependencies": {
+    "bun": "^1.2.2",
     "@astrojs/rss": "^4.0.11",
     "astro": "5.2.5",
     "prettier": "^3.4.2",
