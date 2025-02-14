@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
+layout: ../../layouts/MarkDownPostLayout.astro
 title: 'Mi primer mes con Astro: De principiante a creador'
 pubDate: 2024-02-01
 description: 'Mi experiencia construyendo un blog profesional con Astro desde cero'

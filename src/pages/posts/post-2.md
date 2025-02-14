@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
+layout: ../../layouts/MarkDownPostLayout.astro
 title: 'Dominando componentes: Mi evolución con Astro'
 author: Efe Studio
 description: 'Cómo los componentes reactivos transformaron mi flujo de trabajo'
