@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
+layout: ../../layouts/MarkDownPostLayout.astro
 title: 'Astro y su comunidad: Más que código'
 author: Efe Studio
 description: 'Cómo la comunidad me ayudó a superar obstáculos técnicos'
