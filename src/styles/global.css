@@ -1,7 +1,15 @@
 html {
-  color: white;
-  background-color: #121212;
   font-family: sans-serif;
+  background: linear-gradient(135deg, #ffffff, #f0f8ff);
+}
+
+html.dark {
+  background: linear-gradient(135deg, #1a1a25, #0f0f1a);
+  color: #fff;
+}
+
+.dark .nav-links a {
+  color: #fff;
 }
 
 body {
@@ -84,14 +92,10 @@ h1 {
 }
 
 /* Nuevos estilos para modernizar el blog */
-html {
-  background: linear-gradient(135deg, #2e2e2e, #121212);
-}
-
 h1,
 h2,
 h3 {
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
 }
 
 a {
@@ -107,10 +111,10 @@ a {
 }
 
 .card {
-  background: #1e1e1e;
+  background: #ffffff;
   border-radius: 0.5rem;
   padding: 1.5rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
@@ -119,5 +123,5 @@ a {
 
 .card:hover {
   transform: translateY(-0.5rem);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
